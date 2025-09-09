@@ -31,6 +31,15 @@ const Index = () => {
         <section id="faq">
           <FAQ />
         </section>
+        
+        {/* Final Quote Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Quem tem dados ganha o jogo
+            </h2>
+          </div>
+        </section>
       </main>
       
       <Footer />
