@@ -211,22 +211,38 @@ const PricingPlans = () => {
           <h3 className="mb-8 text-2xl font-bold text-foreground">
             Homologado com os principais equipamentos do mercado
           </h3>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-sm font-medium text-muted-foreground">
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Aruba</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Alcatel-Lucent</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Cambium Networks</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Cisco</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Fortinet</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Huawei</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Intelbras</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">MikroTik</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Ruckus</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">TP-Link Omada</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Ubiquiti</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Zyxel Nebula</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth">Grandstream</div>
-              <div className="p-4 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth text-primary font-semibold">+ Muito mais</div>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/80f16309-c210-4df8-8a0f-baf663fffcb3.png" alt="Grandstream Brasil" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/fdda3099-5ea1-4e54-ba7b-1e1c399845ef.png" alt="Zyxel Networks" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/52862581-4152-4aeb-ba26-b1692f9c395b.png" alt="Ubiquiti Networks" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/e909ea2d-5a79-4c63-9229-79a3df046e60.png" alt="Ruckus" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/d3aedbba-54ad-457d-8362-626fcbeca5c0.png" alt="MikroTik" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/5ba940d4-6038-4cac-bc36-2d2902df6820.png" alt="Intelbras" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/255ef3aa-2761-4e94-bfa7-1c9084deea59.png" alt="Huawei" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/c33a1c05-2507-4900-b51b-cd69d4c9f103.png" alt="Fortinet" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/d03121c6-c14d-4f75-a194-2a5eef4acefe.png" alt="Cisco" className="max-h-12 max-w-full object-contain" />
+              </div>
+              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
+                <img src="/lovable-uploads/02d7430b-3ebd-4564-870f-142cfbb87a76.png" alt="Cambium Networks" className="max-h-12 max-w-full object-contain" />
+              </div>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
               Compatible com centenas de equipamentos de rede. Entre em contato para verificar compatibilidade específica.
