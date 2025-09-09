@@ -60,7 +60,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div className="text-center">
               <div className="mb-2 flex items-center justify-center">
                 <Users className="h-6 w-6 text-primary" />
@@ -74,6 +74,13 @@ const Hero = () => {
               </div>
               <div className="text-3xl font-bold text-foreground">+400%</div>
               <div className="text-sm text-muted-foreground">Aumento em vendas</div>
+            </div>
+            <div className="text-center">
+              <div className="mb-2 flex items-center justify-center">
+                <Users className="h-6 w-6 text-primary" />
+              </div>
+              <div className="text-3xl font-bold text-foreground">+150 milhões</div>
+              <div className="text-sm text-muted-foreground">Cadastros capturados</div>
             </div>
             <div className="text-center">
               <div className="mb-2 flex items-center justify-center">
