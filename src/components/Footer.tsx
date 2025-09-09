@@ -8,12 +8,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <Wifi className="h-5 w-5" />
-              </div>
-              <div className="text-xl font-bold text-foreground">
-                U-all <span className="text-primary">Solutions</span>
-              </div>
+              <img 
+                src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png" 
+                alt="U-all Solutions" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Transformando Wi-Fi em oportunidades de negócio. Plataforma completa de Wi-Fi Marketing para PMEs.
@@ -85,11 +84,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>contato@uallsolutions.com.br</span>
+                <span>comercial@uallsolutions.com.br</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+55 (11) 9999-9999</span>
+                <span>+55 11 5200-1762</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />

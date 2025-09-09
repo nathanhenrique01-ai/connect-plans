@@ -19,12 +19,11 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Wifi className="h-5 w-5" />
-            </div>
-            <div className="text-xl font-bold text-foreground">
-              U-all <span className="text-primary">Solutions</span>
-            </div>
+            <img 
+              src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png" 
+              alt="U-all Solutions" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
