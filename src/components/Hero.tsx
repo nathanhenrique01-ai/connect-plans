@@ -25,9 +25,9 @@ const Hero = () => {
           
           {/* Hero Title */}
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Transforme seu <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">Wi-Fi</span> em uma
+            Transforme seu <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Wi-Fi</span> em uma
             <br />
-            máquina de vendas
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">máquina de vendas</span>
           </h1>
           
           {/* Hero Description */}

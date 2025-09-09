@@ -80,7 +80,7 @@ const PricingPlans = () => {
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Escolha o plano ideal para o seu negócio
+            Escolha o <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">plano ideal</span> para o seu negócio
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl">
             Comece agora mesmo e transforme seu Wi-Fi em uma ferramenta de marketing poderosa

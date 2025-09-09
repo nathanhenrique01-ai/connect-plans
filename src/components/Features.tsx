@@ -39,7 +39,7 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Recursos que fazem a diferença
+            Recursos que fazem a <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">diferença</span>
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto leading-relaxed">
             Tecnologia inteligente para transformar qualquer ambiente em um canal de marketing, dados e vendas.
