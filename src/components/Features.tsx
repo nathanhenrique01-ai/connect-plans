@@ -8,29 +8,14 @@ const Features = () => {
       description: "Captura e tratamento de dados 100% conforme a Lei Geral de Proteção de Dados (LGPD). Cada acesso é registrado com base legal, com transparência para o usuário e segurança jurídica para sua empresa."
     },
     {
-      icon: Lock,
-      title: "Login Social Flexível",
-      description: "Ofereça uma experiência de acesso simples e segura via Google, Facebook, Instagram, Apple ou cadastro rápido com telefone, CPF ou e-mail. Você escolhe quais dados deseja coletar. Personalize tudo conforme o seu segmento."
-    },
-    {
       icon: QrCode,
       title: "QR Code para Captura de Dados sem Wi-Fi",
       description: "Nem todo lugar tem Wi-Fi — e tudo bem. Com o modo QR Code da U-All, você transforma cardápios, balcões, vitrines e eventos em pontos de captura de leads, mesmo sem conexão. Ideal para eventos, igrejas, clínicas, influenciadores, autônomos e mais."
     },
     {
-      icon: BarChart,
-      title: "Relatórios Avançados e Inteligência de Dados",
-      description: "Painel com mapas de calor, visitas recorrentes, permanência média, histórico de acessos, dispositivos usados, datas, horários e muito mais. Identifique comportamentos, entenda o seu público e tome decisões baseadas em dados reais."
-    },
-    {
       icon: Zap,
       title: "Campanhas Automatizadas que Vendem por Você",
       description: "Dispare mensagens automáticas por WhatsApp, SMS e E-mail com base no comportamento do visitante. Desde um \"bem-vindo\" até promoções, lembretes ou pedidos de feedback — tudo no momento certo, sem esforço."
-    },
-    {
-      icon: Users,
-      title: "Multi-perfis, Multi-locais e Multi-marcas",
-      description: "Gerencie diversos estabelecimentos, marcas, franquias ou parceiros com dashboards separados e controle total. Ideal para redes, agências, eventos ou estruturas com CNPJs diferentes."
     },
     {
       icon: Settings,
