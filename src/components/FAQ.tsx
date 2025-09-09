@@ -70,9 +70,6 @@ const FAQ = () => {
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Perguntas Frequentes
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Tire suas dúvidas sobre nossa plataforma de Wi-Fi Marketing
-          </p>
         </div>
 
         <div className="mx-auto max-w-4xl">
