@@ -79,7 +79,7 @@ const Hero = () => {
               <div className="mb-2 flex items-center justify-center">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-foreground">+150 milhões</div>
+              <div className="text-3xl font-bold text-foreground">+15 milhões</div>
               <div className="text-sm text-muted-foreground">Cadastros capturados</div>
             </div>
             <div className="text-center">
