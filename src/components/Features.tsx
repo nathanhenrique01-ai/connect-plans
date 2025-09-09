@@ -43,7 +43,6 @@ const Features = () => {
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto leading-relaxed">
             Tecnologia inteligente para transformar qualquer ambiente em um canal de marketing, dados e vendas.
-            Você escolhe: por Wi-Fi, QR Code ou integração — a U-All Solutions te entrega dados reais e resultados concretos.
           </p>
         </div>
 
