@@ -77,7 +77,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-smooth"
                 >
-                  Agendar Demo
+                  Agendar Demonstração
                 </a>
               </li>
             </ul>

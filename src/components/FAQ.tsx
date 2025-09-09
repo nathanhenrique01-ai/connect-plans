@@ -51,7 +51,7 @@ const FAQ = () => {
     },
     {
       question: "Posso testar a plataforma antes de contratar?",
-      answer: "Claro! Podemos agendar uma demonstração personalizada com nosso time. Solicite agora pelo botão \"Agendar Demo\" no topo da página."
+      answer: "Claro! Podemos agendar uma demonstração personalizada com nosso time. Solicite agora pelo botão \"Agendar Demonstração\" no topo da página."
     }
   ];
 

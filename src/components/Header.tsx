@@ -57,7 +57,7 @@ const Header = () => {
               size="sm"
               onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
             >
-              Agendar Demo
+              Agendar Demonstração
             </Button>
           </nav>
 
@@ -108,7 +108,7 @@ const Header = () => {
                 className="w-fit"
                 onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
               >
-                Agendar Demo
+                Agendar Demonstração
               </Button>
             </nav>
           </div>
