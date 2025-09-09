@@ -1,0 +1,113 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Wifi } from "lucide-react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
+  };
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+              <Wifi className="h-5 w-5" />
+            </div>
+            <div className="text-xl font-bold text-foreground">
+              U-all <span className="text-primary">Solutions</span>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <button
+              onClick={() => scrollToSection("inicio")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              Início
+            </button>
+            <button
+              onClick={() => scrollToSection("recursos")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              Recursos
+            </button>
+            <button
+              onClick={() => scrollToSection("planos")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              Planos
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              FAQ
+            </button>
+            <Button variant="default" size="sm">
+              Agendar Demo
+            </Button>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden"
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6 text-foreground" />
+            ) : (
+              <Menu className="h-6 w-6 text-foreground" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden border-t border-border bg-background">
+            <nav className="flex flex-col space-y-4 px-4 py-6">
+              <button
+                onClick={() => scrollToSection("inicio")}
+                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+              >
+                Início
+              </button>
+              <button
+                onClick={() => scrollToSection("recursos")}
+                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+              >
+                Recursos
+              </button>
+              <button
+                onClick={() => scrollToSection("planos")}
+                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+              >
+                Planos
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+              >
+                FAQ
+              </button>
+              <Button variant="default" size="sm" className="w-fit">
+                Agendar Demo
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
