@@ -41,15 +41,6 @@ const Markets = () => {
           </p>
         </div>
 
-        {/* Markets Image */}
-        <div className="mb-16 flex justify-center">
-          <img 
-            src="/lovable-uploads/abc1474d-f301-46b9-bb73-c0e82c382ed8.png" 
-            alt="Setores atendidos pela U-all Solutions: Varejo, Hotéis, Hospitais e Clínicas, Parceiros e Eventos"
-            className="w-full max-w-4xl h-auto rounded-xl shadow-card-hover"
-          />
-        </div>
-
         {/* Markets Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {markets.map((market, index) => {
