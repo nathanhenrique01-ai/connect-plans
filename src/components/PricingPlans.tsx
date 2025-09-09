@@ -223,10 +223,10 @@ const PricingPlans = () => {
                 <img src="/lovable-uploads/52862581-4152-4aeb-ba26-b1692f9c395b.png" alt="Ubiquiti Networks" className="max-h-12 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/e909ea2d-5a79-4c63-9229-79a3df046e60.png" alt="Ruckus" className="max-h-12 max-w-full object-contain" />
+                <img src="/lovable-uploads/e909ea2d-5a79-4c63-9229-79a3df046e60.png" alt="Ruckus" className="max-h-16 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/d3aedbba-54ad-457d-8362-626fcbeca5c0.png" alt="MikroTik" className="max-h-12 max-w-full object-contain" />
+                <img src="/lovable-uploads/d3aedbba-54ad-457d-8362-626fcbeca5c0.png" alt="MikroTik" className="max-h-16 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
                 <img src="/lovable-uploads/5ba940d4-6038-4cac-bc36-2d2902df6820.png" alt="Intelbras" className="max-h-12 max-w-full object-contain" />
@@ -235,13 +235,13 @@ const PricingPlans = () => {
                 <img src="/lovable-uploads/255ef3aa-2761-4e94-bfa7-1c9084deea59.png" alt="Huawei" className="max-h-12 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/c33a1c05-2507-4900-b51b-cd69d4c9f103.png" alt="Fortinet" className="max-h-16 max-w-full object-contain" />
+                <img src="/lovable-uploads/c33a1c05-2507-4900-b51b-cd69d4c9f103.png" alt="Fortinet" className="max-h-20 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
                 <img src="/lovable-uploads/d03121c6-c14d-4f75-a194-2a5eef4acefe.png" alt="Cisco" className="max-h-12 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/02d7430b-3ebd-4564-870f-142cfbb87a76.png" alt="Cambium Networks" className="max-h-12 max-w-full object-contain" />
+                <img src="/lovable-uploads/02d7430b-3ebd-4564-870f-142cfbb87a76.png" alt="Cambium Networks" className="max-h-16 max-w-full object-contain" />
               </div>
               <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
                 <img src="/lovable-uploads/b1c7ff7f-bf64-4f64-b289-7e93efdf2273.png" alt="Alcatel-Lucent Enterprise" className="max-h-12 max-w-full object-contain" />
