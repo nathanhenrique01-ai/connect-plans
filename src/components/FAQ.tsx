@@ -6,44 +6,64 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "O que exatamente a U-all Solutions oferece?",
-      answer: "Uma plataforma SaaS de Wi-Fi Marketing e captação de dados (captive portal), com automações, relatórios e integrações. Não inclui hardware nem instalação física."
+      question: "O que exatamente a U-All Solutions oferece?",
+      answer: "A U-All é uma plataforma completa de Wi-Fi Marketing, Captura de Dados e Engajamento Inteligente, que transforma redes Wi-Fi e QR Codes em ferramentas de crescimento, vendas e relacionamento. Capturamos dados dos visitantes (como nome, e-mail, telefone, CPF, redes sociais) com total conformidade com a LGPD e automatizamos campanhas por WhatsApp, e-mail e SMS."
     },
     {
-      question: "Infraestrutura está incluída?",
-      answer: "Não. O serviço é de software. O cliente deve possuir rede Wi-Fi funcional (APs/controladora/roteador, switch/PoE, cabeamento e internet)."
+      question: "Preciso ter Wi-Fi para usar a plataforma?",
+      answer: "Não! A U-All também funciona com QR Codes, ideais para estabelecimentos sem rede Wi-Fi ou para captura complementar em cardápios, vitrines, mesas, eventos e muito mais."
+    },
+    {
+      question: "A infraestrutura (equipamentos) está inclusa no plano?",
+      answer: "A infraestrutura física não está inclusa. A U-All é uma plataforma SaaS (software) e o cliente deve possuir ou adquirir os equipamentos de rede compatíveis com nossa solução. Podemos indicar modelos homologados."
     },
     {
       question: "Quais equipamentos são compatíveis?",
-      answer: "Compatível com os principais do mercado (ex.: MikroTik, Ubiquiti/UniFi, TP-Link/Omada). Precisa permitir captive portal e Walled Garden/Whitelist."
+      answer: "Somos compatíveis com os principais equipamentos do mercado, como TP-Link Omada, Mikrotik, UniFi (Ubiquiti), Cambium, Ruckus e outros que aceitam captive portal externo e autenticação via RADIUS."
     },
     {
-      question: "O que preciso ter pronto para ativar?",
-      answer: "AP/roteador compatível e internet ativa, DHCP habilitado, acesso à controladora/roteador para ajustes e liberação de domínios/URLs (Walled Garden) do portal."
+      question: "O que significa \"acessos ilimitados\"?",
+      answer: "Significa que você pode receber quantos visitantes quiser na sua rede ou QR Code, sem limitação de cadastros, logins ou acessos simultâneos. O que varia entre os planos é o nível de recursos e suporte disponível."
     },
     {
-      question: "O que significa 'acessos ilimitados' e 'logins ilimitados'?",
-      answer: "Acessos ilimitados: sem limite de conexões/autorizações no licenciamento do software. A capacidade real depende do hardware e do link do cliente. Logins ilimitados: você pode criar quantos usuários/operadores precisar."
+      question: "Qual é a diferença entre os planos?",
+      answer: "Os planos variam de acordo com: Tipos de campanhas (WhatsApp, SMS, e-mail), Relatórios avançados, Número de perfis e locais, Integrações e API, Nível de suporte (horário e canais), Funções exclusivas como IA e automações inteligentes. Você pode comparar os planos na tabela de comparação."
     },
     {
-      question: "Diferença prática entre os planos?",
-      answer: "Connect: 1 login + 1 perfil, captura básica, suporte 8x5. Marketing: acessos ilimitados, login social, automação completa, suporte 24x7. Experience: tudo do Marketing + IA, especialista dedicado, carteira digital."
+      question: "Vocês fazem disparo automático por WhatsApp, SMS e e-mail?",
+      answer: "Sim! A U-All permite criar campanhas automatizadas baseadas no comportamento do cliente: visitas, horários, número de acessos, aniversários, entre outros."
     },
     {
-      question: "Campanhas por WhatsApp, e-mail e SMS estão inclusas?",
-      answer: "As funcionalidades estão inclusas. Custos de envio (gateways/operadoras/API Meta) são à parte do plano e cobrados pelos provedores."
+      question: "Posso integrar com meu CRM ou ferramentas externas?",
+      answer: "Com certeza! Possuímos APIs abertas, webhooks, integração com CRM, Google Analytics (GA4), Facebook Pixel, Zapier e outras ferramentas. É possível conectar com RD Station, PipeRun, HubSpot, entre outros."
     },
     {
-      question: "Como funciona a cobrança e o desconto anual?",
-      answer: "Planos mensais ou anuais. No anual há 20% OFF (exibimos o valor total anual e o equivalente mensal). Pagamento e gestão via GuruManage."
+      question: "É necessário conhecimento técnico para usar a plataforma?",
+      answer: "Não. O painel da U-All é simples, visual e intuitivo. Você consegue montar fluxos, campanhas e relatórios com poucos cliques. Se precisar de ajuda, temos material de apoio, vídeos e suporte humanizado."
     },
     {
-      question: "Tem fidelidade? Posso cancelar quando quiser?",
-      answer: "Sem fidelidade. O cancelamento interrompe a próxima renovação. (Encargos já faturados não são reembolsáveis.)"
+      question: "Como funciona a cobrança e o plano anual?",
+      answer: "A cobrança é mensal ou anual, via boleto ou cartão. Planos anuais possuem 20% de desconto e podem ser parcelados. Sem surpresas ou cobranças adicionais."
     },
     {
-      question: "Como é o suporte em cada plano?",
-      answer: "Connect: horário comercial 8x5. Marketing: 24x7. Experience: fila prioritária + atendimento dedicado (CS) e acompanhamento mensal."
+      question: "Existe fidelidade ou contrato mínimo?",
+      answer: "Não. A U-All preza pela liberdade. Você pode cancelar a qualquer momento, sem multa. Nos planos mensais, a cobrança é recorrente até que você solicite o cancelamento."
+    },
+    {
+      question: "Como funciona o suporte em cada plano?",
+      answer: "Plano Experience: suporte por e-mail e base de conhecimento. Plano Marketing: suporte 24/7 via WhatsApp e e-mail. Plano Marketing Plus: suporte premium com SLA reduzido, equipe técnica dedicada e plantão de atendimento."
+    },
+    {
+      question: "A plataforma é segura e está em conformidade com a LGPD?",
+      answer: "Sim. Temos criptografia de ponta, servidores no Brasil e políticas de proteção de dados conforme exigido pela Lei Geral de Proteção de Dados (LGPD). Você também pode personalizar os termos de uso e privacidade exibidos aos usuários da rede."
+    },
+    {
+      question: "Consigo ver quem são meus visitantes e se eles voltaram?",
+      answer: "Sim. O sistema identifica visitantes únicos e recorrentes, mostra quando e onde acessaram, qual dispositivo foi usado, tempo de permanência e até geolocalização."
+    },
+    {
+      question: "Posso testar a plataforma antes de contratar?",
+      answer: "Claro! Podemos agendar uma demonstração personalizada com nosso time. Solicite agora pelo botão \"Agendar Demo\" no topo da página."
     }
   ];
 
