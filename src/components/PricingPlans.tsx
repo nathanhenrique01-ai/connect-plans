@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Star } from "lucide-react";
+import networkingLogos from "@/assets/networking-brands-logos.png";
 
 const PricingPlans = () => {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -202,6 +203,36 @@ const PricingPlans = () => {
             <p>
               <strong>Custos de envio</strong> (SMS/WhatsApp/E-mail) são cobrados pelos provedores/gateways e não estão inclusos nos planos.
             </p>
+          </div>
+        </div>
+
+        {/* Compatibility Section */}
+        <div className="mt-16 text-center">
+          <h3 className="mb-8 text-2xl font-bold text-foreground">
+            Homologado com os principais equipamentos do mercado
+          </h3>
+          <div className="mb-8">
+            <img 
+              src={networkingLogos} 
+              alt="Logos das marcas homologadas: Aruba, Alcatel-Lucent, Cambium Networks, Cisco, Fortinet, Huawei, Intelbras, MikroTik, Ruckus, TP-Link Omada, Ubiquiti, Zyxel Nebula, Grandstream"
+              className="w-full max-w-4xl mx-auto h-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-sm text-muted-foreground max-w-3xl mx-auto">
+            <div>Aruba</div>
+            <div>Alcatel-Lucent</div>
+            <div>Cambium Networks</div>
+            <div>Cisco</div>
+            <div>Fortinet</div>
+            <div>Huawei</div>
+            <div>Intelbras</div>
+            <div>MikroTik</div>
+            <div>Ruckus</div>
+            <div>TP-Link Omada</div>
+            <div>Ubiquiti</div>
+            <div>Zyxel Nebula</div>
+            <div>Grandstream</div>
+            <div className="md:col-span-3 lg:col-span-1">E muito mais...</div>
           </div>
         </div>
       </div>
