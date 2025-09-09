@@ -41,7 +41,11 @@ const Hero = () => {
               Ver nossos planos
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" size="xl">
+            <Button 
+              variant="outline" 
+              size="xl"
+              onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+            >
               Agendar demonstração
             </Button>
           </div>

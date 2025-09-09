@@ -52,7 +52,11 @@ const Header = () => {
             >
               FAQ
             </button>
-            <Button variant="default" size="sm">
+            <Button 
+              variant="default" 
+              size="sm"
+              onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+            >
               Agendar Demo
             </Button>
           </nav>
@@ -98,7 +102,12 @@ const Header = () => {
               >
                 FAQ
               </button>
-              <Button variant="default" size="sm" className="w-fit">
+              <Button 
+                variant="default" 
+                size="sm" 
+                className="w-fit"
+                onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+              >
                 Agendar Demo
               </Button>
             </nav>

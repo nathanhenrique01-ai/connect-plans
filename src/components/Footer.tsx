@@ -71,7 +71,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-smooth">
+                <a 
+                  href="https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-smooth"
+                >
                   Agendar Demo
                 </a>
               </li>
