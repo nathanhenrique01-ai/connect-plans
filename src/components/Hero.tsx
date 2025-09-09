@@ -53,7 +53,7 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="mb-12 rounded-xl overflow-hidden shadow-card-hover">
             <img 
-              src={dashboardLaptop} 
+              src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png" 
               alt="Dashboard da plataforma U-all Solutions em notebook mostrando analytics e campanhas de Wi-Fi Marketing"
               className="w-full h-auto"
             />
