@@ -48,17 +48,21 @@ const PricingPlans = () => {
     {
       id: "experience",
       name: "Experience",
-      description: "Para negócios que buscam inteligência de dados e performance máxima",
-      monthlyPrice: 299.99,
-      annualPrice: 3239.90,
+      description: "Escale seus resultados com automação e inteligência de dados para uma estratégia conversacional avançada",
+      monthlyPrice: null,
+      annualPrice: null,
       popular: false,
       features: [
         "Tudo do plano Marketing +",
-        "Captura de dados com LGPD",
-        "IA com insights no dashboard",
+        "Agentes com Inteligência Artificial",
+        "Chatbots avançados com qualificação inteligente de leads",
+        "Categorização automática dos atendimentos com IA",
+        "Dashboards personalizados",
+        "Tela analítica da origem de contato",
+        "Inteligência artificial nativa e APIs avançadas",
+        "Usuários ilimitados",
         "Acompanhamento mensal com especialista",
-        "Suporte prioritário com atendimento dedicado",
-        "Plataforma pronta para grandes volumes"
+        "Suporte prioritário com atendimento dedicado"
       ]
     }
   ];
@@ -143,7 +147,16 @@ const PricingPlans = () => {
 
               {/* Pricing */}
               <div className="mb-8 text-center">
-                {isAnnual ? (
+                {plan.monthlyPrice === null ? (
+                  <div>
+                    <div className="text-3xl font-bold text-primary mb-2">
+                      Preço sob consulta
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Soluções personalizadas para seu negócio
+                    </div>
+                  </div>
+                ) : isAnnual ? (
                   <div>
                     <div className="mb-2">
                       <span className="text-4xl font-bold text-card-foreground">
@@ -184,7 +197,7 @@ const PricingPlans = () => {
                 size="lg"
                 className="w-full"
               >
-                Escolher {plan.name}
+                {plan.monthlyPrice === null ? "Fale com vendas" : `Escolher ${plan.name}`}
               </Button>
             </div>
           ))}
