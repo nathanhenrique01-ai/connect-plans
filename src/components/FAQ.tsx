@@ -26,10 +26,6 @@ const FAQ = () => {
       answer: "Significa que você pode receber quantos visitantes quiser na sua rede ou QR Code, sem limitação de cadastros, logins ou acessos simultâneos. O que varia entre os planos é o nível de recursos e suporte disponível."
     },
     {
-      question: "Qual é a diferença entre os planos?",
-      answer: "Os planos variam de acordo com: Tipos de campanhas (WhatsApp, SMS, e-mail), Relatórios avançados, Número de perfis e locais, Integrações e API, Nível de suporte (horário e canais), Funções exclusivas como IA e automações inteligentes. Você pode comparar os planos na tabela de comparação."
-    },
-    {
       question: "Vocês fazem disparo automático por WhatsApp, SMS e e-mail?",
       answer: "Sim! A U-All permite criar campanhas automatizadas baseadas no comportamento do cliente: visitas, horários, número de acessos, aniversários, entre outros."
     },
@@ -44,14 +40,6 @@ const FAQ = () => {
     {
       question: "Como funciona a cobrança e o plano anual?",
       answer: "A cobrança é mensal ou anual, via boleto ou cartão. Planos anuais possuem 20% de desconto e podem ser parcelados. Sem surpresas ou cobranças adicionais."
-    },
-    {
-      question: "Existe fidelidade ou contrato mínimo?",
-      answer: "Não. A U-All preza pela liberdade. Você pode cancelar a qualquer momento, sem multa. Nos planos mensais, a cobrança é recorrente até que você solicite o cancelamento."
-    },
-    {
-      question: "Como funciona o suporte em cada plano?",
-      answer: "Plano Experience: suporte por e-mail e base de conhecimento. Plano Marketing: suporte 24/7 via WhatsApp e e-mail. Plano Marketing Plus: suporte premium com SLA reduzido, equipe técnica dedicada e plantão de atendimento."
     },
     {
       question: "A plataforma é segura e está em conformidade com a LGPD?",
