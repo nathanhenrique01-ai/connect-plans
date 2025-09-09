@@ -65,6 +65,28 @@ const Markets = () => {
             );
           })}
         </div>
+
+        {/* Client Logos Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-semibold text-foreground mb-2">
+              Empresas que confiam na nossa solução
+            </h3>
+            <p className="text-muted-foreground">
+              Clientes que já transformaram sua experiência de Wi-Fi
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="bg-card rounded-xl p-8 shadow-card border border-border/50 max-w-5xl">
+              <img 
+                src="/lovable-uploads/3e10a188-2c22-4f72-9b23-9368fcd1099c.png" 
+                alt="Logos de empresas clientes: McDonald's, Senac, Fogo de Chão, ReidoMate, Atlantica Hotels, Radisson, Unimed, Murillo, Ipiranga, Laghetto Hotéis, Hilton"
+                className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
