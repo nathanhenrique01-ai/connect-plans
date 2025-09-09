@@ -39,7 +39,7 @@ const FAQ = () => {
     },
     {
       question: "Como funciona a cobrança e o plano anual?",
-      answer: "A cobrança é mensal ou anual, via boleto ou cartão. Planos anuais possuem 20% de desconto e podem ser parcelados. Sem surpresas ou cobranças adicionais."
+      answer: "A cobrança é mensal ou anual, via cartão ou pix. Planos anuais possuem 20% de desconto e podem ser parcelados. Sem surpresas ou cobranças adicionais."
     },
     {
       question: "A plataforma é segura e está em conformidade com a LGPD?",
@@ -51,7 +51,7 @@ const FAQ = () => {
     },
     {
       question: "Posso testar a plataforma antes de contratar?",
-      answer: "Claro! Podemos agendar uma demonstração personalizada com nosso time. Solicite agora pelo botão \"Agendar Demonstração\" no topo da página."
+      answer: "Claro! Podemos agendar uma demonstração personalizada com nosso time."
     }
   ];
 
