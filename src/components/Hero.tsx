@@ -32,7 +32,7 @@ const Hero = () => {
           
           {/* Hero Description */}
           <p className="mb-8 text-lg text-muted-foreground md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de Wi-Fi Marketing mais completa do Brasil.
+            Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de inteligência de dados da U-all Solutions, a mais completa do mercado.
           </p>
           
           {/* CTA Buttons */}
