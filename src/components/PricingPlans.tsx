@@ -34,6 +34,7 @@ const PricingPlans = () => {
       features: [
         "Acessos ilimitados",
         "Logins de usuários ilimitados",
+        "Captura de dados com LGPD",
         "Login social (Facebook/Google/Instagram)",
         "Campanhas automáticas (SMS, e-mail, WhatsApp META)",
         "Dashboard com gráficos e relatórios detalhados",
@@ -52,9 +53,9 @@ const PricingPlans = () => {
       popular: false,
       features: [
         "Tudo do plano Marketing +",
+        "Captura de dados com LGPD",
         "IA com insights no dashboard",
         "Acompanhamento mensal com especialista",
-        "Carteira digital integrada",
         "Suporte prioritário com atendimento dedicado",
         "Plataforma pronta para grandes volumes"
       ]

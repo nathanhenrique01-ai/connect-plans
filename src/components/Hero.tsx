@@ -61,14 +61,14 @@ const Hero = () => {
               <div className="mb-2 flex items-center justify-center">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-foreground">+2.000</div>
-              <div className="text-sm text-muted-foreground">Negócios ativos</div>
+              <div className="text-3xl font-bold text-foreground">+10 mil</div>
+              <div className="text-sm text-muted-foreground">Locais ativos</div>
             </div>
             <div className="text-center">
               <div className="mb-2 flex items-center justify-center">
                 <BarChart3 className="h-6 w-6 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-foreground">+300%</div>
+              <div className="text-3xl font-bold text-foreground">+400%</div>
               <div className="text-sm text-muted-foreground">Aumento em vendas</div>
             </div>
             <div className="text-center">
