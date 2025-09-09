@@ -10,12 +10,12 @@ const Features = () => {
     {
       icon: QrCode,
       title: "QR Code para Captura de Dados sem Wi-Fi",
-      description: "Nem todo lugar tem Wi-Fi — e tudo bem. Com o modo QR Code da U-All, você transforma cardápios, balcões, vitrines e eventos em pontos de captura de leads, mesmo sem conexão. Ideal para eventos, igrejas, clínicas, influenciadores, autônomos e mais."
+      description: "Nem todo lugar tem Wi-Fi, e tudo bem. Com o modo QR Code da U-All, você transforma cardápios, balcões, vitrines e eventos em pontos de captura de leads, mesmo sem conexão. Ideal para eventos, igrejas, clínicas, influenciadores, autônomos e mais."
     },
     {
       icon: Zap,
       title: "Campanhas Automatizadas que Vendem por Você",
-      description: "Dispare mensagens automáticas por WhatsApp, SMS e E-mail com base no comportamento do visitante. Desde um \"bem-vindo\" até promoções, lembretes ou pedidos de feedback — tudo no momento certo, sem esforço."
+      description: "Dispare mensagens automáticas por WhatsApp, SMS e E-mail com base no comportamento do visitante. Desde um \"bem-vindo\" até promoções, lembretes ou pedidos de feedback, tudo no momento certo, sem esforço."
     },
     {
       icon: Settings,

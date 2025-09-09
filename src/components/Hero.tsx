@@ -20,7 +20,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
             <Wifi className="mr-2 h-4 w-4" />
-            Wi-Fi Marketing Inteligente
+            Inteligência de Dados
           </div>
           
           {/* Hero Title */}
