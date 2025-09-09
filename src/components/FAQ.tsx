@@ -6,7 +6,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "O que exatamente a WallSolution PME oferece?",
+      question: "O que exatamente a U-all Solutions oferece?",
       answer: "Uma plataforma SaaS de Wi-Fi Marketing e captação de dados (captive portal), com automações, relatórios e integrações. Não inclui hardware nem instalação física."
     },
     {

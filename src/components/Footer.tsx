@@ -36,17 +36,17 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a href="#planos" className="hover:text-primary transition-smooth">
-                  WallSolution Connect
+                  U-all Connect
                 </a>
               </li>
               <li>
                 <a href="#planos" className="hover:text-primary transition-smooth">
-                  WallSolution Marketing
+                  U-all Marketing
                 </a>
               </li>
               <li>
                 <a href="#planos" className="hover:text-primary transition-smooth">
-                  WallSolution Experience
+                  U-all Experience
                 </a>
               </li>
             </ul>
