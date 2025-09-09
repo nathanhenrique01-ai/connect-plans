@@ -12,8 +12,8 @@ const PricingPlans = () => {
       id: "connect",
       name: "Connect",
       description: "Para quem precisa capturar dados e ativar um hotspot com segurança",
-      monthlyPrice: 179.99,
-      annualPrice: 1727.90,
+      monthlyPrice: 239.99,
+      annualPrice: 2591.90,
       popular: false,
       features: [
         "1 login de acesso",
@@ -29,8 +29,8 @@ const PricingPlans = () => {
       id: "marketing",
       name: "Marketing",
       description: "Para quem quer ativar campanhas automáticas e aumentar vendas",
-      monthlyPrice: 199.99,
-      annualPrice: 1919.90,
+      monthlyPrice: 249.99,
+      annualPrice: 2699.90,
       popular: true,
       features: [
         "Acessos ilimitados",
@@ -49,8 +49,8 @@ const PricingPlans = () => {
       id: "experience",
       name: "Experience",
       description: "Para negócios que buscam inteligência de dados e performance máxima",
-      monthlyPrice: 239.99,
-      annualPrice: 2303.90,
+      monthlyPrice: 299.99,
+      annualPrice: 3239.90,
       popular: false,
       features: [
         "Tudo do plano Marketing +",
@@ -109,7 +109,7 @@ const PricingPlans = () => {
               }`}
             >
               Anual
-              <Badge variant="secondary" className="ml-2">-20%</Badge>
+              <Badge variant="secondary" className="ml-2">-10%</Badge>
             </button>
           </div>
         </div>
@@ -155,7 +155,7 @@ const PricingPlans = () => {
                       Equivale a {getMonthlyEquivalent(plan.annualPrice)}/mês
                     </div>
                     <div className="text-sm text-success font-medium">
-                      Economia de 20% vs mensal
+                      Economia de 10% vs mensal
                     </div>
                   </div>
                 ) : (
