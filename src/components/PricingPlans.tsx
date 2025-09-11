@@ -12,8 +12,8 @@ const PricingPlans = () => {
       id: "connect",
       name: "Connect",
       description: "Para quem precisa capturar dados e ativar um hotspot com segurança",
-      monthlyPrice: 219.99,
-      annualPrice: 2375.89,
+      monthlyPrice: 189.99,
+      annualPrice: 2051.89,
       popular: false,
       features: [
         "1 login de acesso",
