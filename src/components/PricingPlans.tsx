@@ -1,8 +1,7 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
-import networkingLogos from "@/assets/networking-brands-logos.png";
+import { useState } from "react";
 
 const PricingPlans = () => {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -22,15 +21,15 @@ const PricingPlans = () => {
         "Portal personalizado (logo/cores)",
         "Relatórios básicos de conexões",
         "Suporte 8x5 (horário comercial)",
-        "Plataforma homologada"
-      ]
+        "Plataforma homologada",
+      ],
     },
     {
       id: "marketing",
       name: "Marketing",
       description: "Para quem quer ativar campanhas automáticas e aumentar vendas",
       monthlyPrice: 249.99,
-      annualPrice: 2699.90,
+      annualPrice: 2699.9,
       popular: true,
       features: [
         "Acessos ilimitados",
@@ -42,13 +41,14 @@ const PricingPlans = () => {
         "Integração com APIs externas",
         "Botões Call-to-Action personalizados",
         "Relatório de mapa de calor",
-        "Suporte completo 24x7"
-      ]
+        "Suporte completo 24x7",
+      ],
     },
     {
       id: "experience",
       name: "Experience",
-      description: "Escale seus resultados com automação e inteligência de dados para uma estratégia conversacional avançada",
+      description:
+        "Escale seus resultados com automação e inteligência de dados para uma estratégia conversacional avançada",
       monthlyPrice: null,
       annualPrice: null,
       popular: false,
@@ -62,15 +62,15 @@ const PricingPlans = () => {
         "Inteligência artificial nativa e APIs avançadas",
         "Usuários ilimitados",
         "Acompanhamento mensal com especialista",
-        "Suporte prioritário com atendimento dedicado"
-      ]
-    }
+        "Suporte prioritário com atendimento dedicado",
+      ],
+    },
   ];
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL'
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
     }).format(price);
   };
 
@@ -84,7 +84,11 @@ const PricingPlans = () => {
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Escolha o <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">plano ideal</span> para o seu negócio
+            Escolha o{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              plano ideal
+            </span>{" "}
+            para o seu negócio
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl">
             Comece agora mesmo e transforme seu Wi-Fi em uma ferramenta de marketing poderosa
@@ -97,8 +101,8 @@ const PricingPlans = () => {
             <button
               onClick={() => setIsAnnual(false)}
               className={`rounded-md px-6 py-2 text-sm font-medium transition-smooth ${
-                !isAnnual 
-                  ? "bg-background text-foreground shadow-card" 
+                !isAnnual
+                  ? "bg-background text-foreground shadow-card"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -107,13 +111,15 @@ const PricingPlans = () => {
             <button
               onClick={() => setIsAnnual(true)}
               className={`rounded-md px-6 py-2 text-sm font-medium transition-smooth ${
-                isAnnual 
-                  ? "bg-background text-foreground shadow-card" 
+                isAnnual
+                  ? "bg-background text-foreground shadow-card"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Anual
-              <Badge variant="secondary" className="ml-2">-10%</Badge>
+              <Badge variant="secondary" className="ml-2">
+                -10%
+              </Badge>
             </button>
           </div>
         </div>
@@ -124,9 +130,7 @@ const PricingPlans = () => {
             <div
               key={plan.id}
               className={`relative rounded-xl border bg-card p-8 transition-smooth hover:shadow-card-hover ${
-                plan.popular 
-                  ? "border-primary shadow-popular scale-105" 
-                  : "border-border shadow-card"
+                plan.popular ? "border-primary shadow-popular scale-105" : "border-border shadow-card"
               }`}
             >
               {/* Popular Badge */}
@@ -149,9 +153,7 @@ const PricingPlans = () => {
               <div className="mb-8 text-center">
                 {plan.monthlyPrice === null ? (
                   <div>
-                    <div className="text-3xl font-bold text-primary mb-2">
-                      Preço sob consulta
-                    </div>
+                    <div className="text-3xl font-bold text-primary mb-2">Preço sob consulta</div>
                     <div className="text-sm text-muted-foreground">
                       Soluções personalizadas para seu negócio
                     </div>
@@ -160,16 +162,14 @@ const PricingPlans = () => {
                   <div>
                     <div className="mb-2">
                       <span className="text-4xl font-bold text-card-foreground">
-                        {formatPrice(plan.annualPrice)}
+                        {formatPrice(plan.annualPrice!)}
                       </span>
                       <span className="text-muted-foreground">/ano</span>
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Equivale a {getMonthlyEquivalent(plan.annualPrice)}/mês
+                      Equivale a {getMonthlyEquivalent(plan.annualPrice!)} /mês
                     </div>
-                    <div className="text-sm text-success font-medium">
-                      Economia de 10% vs mensal
-                    </div>
+                    <div className="text-sm text-success font-medium">Economia de 10% vs mensal</div>
                   </div>
                 ) : (
                   <div>
@@ -192,12 +192,40 @@ const PricingPlans = () => {
               </ul>
 
               {/* CTA Button */}
-              <Button
-                variant={plan.popular ? "popular" : "default"}
-                size="lg"
-                className="w-full"
-              >
-                {plan.monthlyPrice === null ? "Fale com vendas" : `Escolher ${plan.name}`}
+              <Button asChild variant={plan.popular ? "popular" : "default"} size="lg" className="w-full">
+                {plan.monthlyPrice === null ? (
+                  <a
+                    href="https://clkdmg.site/subscribe/contato-experience"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fale com vendas
+                  </a>
+                ) : plan.id === "connect" ? (
+                  <a
+                    href={
+                      isAnnual
+                        ? "https://clkdmg.site/subscribe/plano-connect-u-all-anual-com-10"
+                        : "https://clkdmg.site/subscribe/plano-connect-u-all-automacao-dados"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Escolher {plan.name}
+                  </a>
+                ) : plan.id === "marketing" ? (
+                  <a
+                    href={
+                      isAnnual
+                        ? "https://clkdmg.site/subscribe/plano-marketing-u-all-anual-com-10"
+                        : "https://clkdmg.site/subscribe/marketing-uall"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Escolher {plan.name}
+                  </a>
+                ) : null}
               </Button>
             </div>
           ))}
@@ -208,13 +236,17 @@ const PricingPlans = () => {
           <h4 className="mb-4 font-semibold text-card-foreground">Observações importantes:</h4>
           <div className="space-y-2 text-sm text-muted-foreground">
             <p>
-              <strong>Serviço SaaS:</strong> Infraestrutura Wi-Fi não incluída (APs/controladora, roteadores, switches/PoE, cabeamento e link). O cliente deve possuir equipamentos compatíveis e internet ativa.
+              <strong>Serviço SaaS:</strong> Infraestrutura Wi-Fi não incluída (APs/controladora, roteadores,
+              switches/PoE, cabeamento e link). O cliente deve possuir equipamentos compatíveis e internet
+              ativa.
             </p>
             <p>
-              <strong>"Acessos/Logins ilimitados"</strong> referem-se ao licenciamento do software. A capacidade real depende do hardware e do link do cliente.
+              <strong>"Acessos/Logins ilimitados"</strong> referem-se ao licenciamento do software. A
+              capacidade real depende do hardware e do link do cliente.
             </p>
             <p>
-              <strong>Custos de envio</strong> (SMS/WhatsApp/E-mail) são cobrados pelos provedores/gateways e não estão inclusos nos planos.
+              <strong>Custos de envio</strong> (SMS/WhatsApp/E-mail) são cobrados pelos provedores/gateways e
+              não estão inclusos nos planos.
             </p>
           </div>
         </div>
@@ -226,45 +258,94 @@ const PricingPlans = () => {
           </h3>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/80f16309-c210-4df8-8a0f-baf663fffcb3.png" alt="Grandstream Brasil" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/80f16309-c210-4df8-8a0f-baf663fffcb3.png"
+                  alt="Grandstream Brasil"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/fdda3099-5ea1-4e54-ba7b-1e1c399845ef.png" alt="Zyxel Networks" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/fdda3099-5ea1-4e54-ba7b-1e1c399845ef.png"
+                  alt="Zyxel Networks"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/52862581-4152-4aeb-ba26-b1692f9c395b.png" alt="Ubiquiti Networks" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/52862581-4152-4aeb-ba26-b1692f9c395b.png"
+                  alt="Ubiquiti Networks"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/e909ea2d-5a79-4c63-9229-79a3df046e60.png" alt="Ruckus" className="max-h-16 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/e909ea2d-5a79-4c63-9229-79a3df046e60.png"
+                  alt="Ruckus"
+                  className="max-h-16 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/d3aedbba-54ad-457d-8362-626fcbeca5c0.png" alt="MikroTik" className="max-h-16 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/d3aedbba-54ad-457d-8362-626fcbeca5c0.png"
+                  alt="MikroTik"
+                  className="max-h-16 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/5ba940d4-6038-4cac-bc36-2d2902df6820.png" alt="Intelbras" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/5ba940d4-6038-4cac-bc36-2d2902df6820.png"
+                  alt="Intelbras"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/255ef3aa-2761-4e94-bfa7-1c9084deea59.png" alt="Huawei" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/255ef3aa-2761-4e94-bfa7-1c9084deea59.png"
+                  alt="Huawei"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/c33a1c05-2507-4900-b51b-cd69d4c9f103.png" alt="Fortinet" className="max-h-20 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/c33a1c05-2507-4900-b51b-cd69d4c9f103.png"
+                  alt="Fortinet"
+                  className="max-h-20 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/d03121c6-c14d-4f75-a194-2a5eef4acefe.png" alt="Cisco" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/d03121c6-c14d-4f75-a194-2a5eef4acefe.png"
+                  alt="Cisco"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/02d7430b-3ebd-4564-870f-142cfbb87a76.png" alt="Cambium Networks" className="max-h-16 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/02d7430b-3ebd-4564-870f-142cfbb87a76.png"
+                  alt="Cambium Networks"
+                  className="max-h-16 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/b1c7ff7f-bf64-4f64-b289-7e93efdf2273.png" alt="Alcatel-Lucent Enterprise" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/b1c7ff7f-bf64-4f64-b289-7e93efdf2273.png"
+                  alt="Alcatel-Lucent Enterprise"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
-              <div className="p-6 rounded-lg bg-card border border-border hover:shadow-card-hover transition-smooth flex items-center justify-center h-24">
-                <img src="/lovable-uploads/e5411bc0-7d0d-4c91-b9a3-15033edad9b9.png" alt="Aruba" className="max-h-12 max-w-full object-contain" />
+              <div className="p-6 rounded-lg bg-card border border-border flex items-center justify-center h-24">
+                <img
+                  src="/lovable-uploads/e5411bc0-7d0d-4c91-b9a3-15033edad9b9.png"
+                  alt="Aruba"
+                  className="max-h-12 max-w-full object-contain"
+                />
               </div>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
-              Compatível com centenas de equipamentos de rede, entre em contato para verificar a compatibilidade específica.
+              Compatível com centenas de equipamentos de rede, entre em contato para verificar a
+              compatibilidade específica.
             </p>
           </div>
         </div>
