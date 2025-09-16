@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Wifi } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +19,9 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png" 
-              alt="U-all Solutions" 
+            <img
+              src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png"
+              alt="U-all Solutions"
               className="h-8 w-auto"
             />
           </div>
@@ -52,20 +52,17 @@ const Header = () => {
             >
               FAQ
             </button>
-            <Button 
-              variant="default" 
+            <Button
+              variant="default"
               size="sm"
-              onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+              onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
             >
               Agendar Demonstração
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden"
-          >
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
             {isMenuOpen ? (
               <X className="h-6 w-6 text-foreground" />
             ) : (
@@ -102,11 +99,11 @@ const Header = () => {
               >
                 FAQ
               </button>
-              <Button 
-                variant="default" 
-                size="sm" 
+              <Button
+                variant="default"
+                size="sm"
                 className="w-fit"
-                onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+                onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
               >
                 Agendar Demonstração
               </Button>

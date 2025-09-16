@@ -194,11 +194,7 @@ const PricingPlans = () => {
               {/* CTA Button */}
               <Button asChild variant={plan.popular ? "popular" : "default"} size="lg" className="w-full">
                 {plan.monthlyPrice === null ? (
-                  <a
-                    href="https://clkdmg.site/subscribe/contato-experience"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="http://e.uall.ai/9d378412" target="_blank" rel="noopener noreferrer">
                     Fale com vendas
                   </a>
                 ) : plan.id === "connect" ? (

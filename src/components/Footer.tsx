@@ -1,4 +1,4 @@
-import { Wifi, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,19 +8,20 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img 
-                src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png" 
-                alt="U-all Solutions" 
+              <img
+                src="/lovable-uploads/6d8043ef-3769-44dd-9408-8a552ecf0def.png"
+                alt="U-all Solutions"
                 className="h-8 w-auto"
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Transformando Wi-Fi em oportunidades de negócio. Plataforma completa de Wi-Fi Marketing para PMEs.
+              Transformando Wi-Fi em oportunidades de negócio. Plataforma completa de Wi-Fi Marketing para
+              PMEs.
             </p>
             <div className="text-sm text-muted-foreground">
-              <a 
-                href="https://www.uallsolutions.com.br" 
-                target="_blank" 
+              <a
+                href="https://www.uallsolutions.com.br"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-smooth"
               >
@@ -71,8 +72,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions."
+                <a
+                  href="http://e.uall.ai/9d378412"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-smooth"

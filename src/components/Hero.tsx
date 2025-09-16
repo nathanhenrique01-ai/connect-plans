@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Wifi, Users, BarChart3 } from "lucide-react";
-import dashboardLaptop from "@/assets/dashboard-laptop-mockup.jpg";
+import { ArrowRight, BarChart3, Users, Wifi } from "lucide-react";
 
 const Hero = () => {
   const scrollToPlans = () => {
@@ -14,7 +13,7 @@ const Hero = () => {
     <section className="relative overflow-hidden bg-background py-20 md:py-28">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/10"></div>
-      
+
       <div className="container relative mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center">
           {/* Badge */}
@@ -22,38 +21,45 @@ const Hero = () => {
             <Wifi className="mr-2 h-4 w-4" />
             Inteligência de Dados
           </div>
-          
+
           {/* Hero Title */}
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Transforme sua <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">empresa</span> em uma
+            Transforme sua{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              empresa
+            </span>{" "}
+            em uma
             <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">máquina de vendas</span>
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              máquina de vendas
+            </span>
           </h1>
-          
+
           {/* Hero Description */}
           <p className="mb-8 text-lg text-muted-foreground md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de inteligência de dados da U-all Solutions, a mais completa do mercado.
+            Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de
+            inteligência de dados da U-all Solutions, a mais completa do mercado.
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button variant="hero" size="xl" className="group" onClick={scrollToPlans}>
               Ver nossos planos
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="xl"
-              onClick={() => window.open('https://wa.me/5518997940028?text=Olá! Gostaria de agendar uma demonstração da plataforma U-all Solutions.', '_blank')}
+              onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
             >
               Agendar demonstração
             </Button>
           </div>
-          
+
           {/* Hero Image */}
           <div className="mb-12 rounded-xl overflow-hidden shadow-card-hover">
-            <img 
-              src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png" 
+            <img
+              src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png"
               alt="Dashboard da plataforma U-all Solutions em notebook mostrando analytics e campanhas de Wi-Fi Marketing"
               className="w-full h-auto"
             />
