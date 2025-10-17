@@ -35,7 +35,7 @@ const PricingPlans = () => {
         "Acessos ilimitados",
         "Logins de usuários ilimitados",
         "Captura de dados com LGPD",
-        "Login social (Facebook/Google/Instagram)",
+        "Login social (Facebook/Google/Microsoft)",
         "Campanhas automáticas (SMS, e-mail, WhatsApp META)",
         "Dashboard com gráficos e relatórios detalhados",
         "Integração com APIs externas",
@@ -101,9 +101,7 @@ const PricingPlans = () => {
             <button
               onClick={() => setIsAnnual(false)}
               className={`rounded-md px-6 py-2 text-sm font-medium transition-smooth ${
-                !isAnnual
-                  ? "bg-background text-foreground shadow-card"
-                  : "text-muted-foreground hover:text-foreground"
+                !isAnnual ? "bg-background text-foreground shadow-card" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Mensal
@@ -111,9 +109,7 @@ const PricingPlans = () => {
             <button
               onClick={() => setIsAnnual(true)}
               className={`rounded-md px-6 py-2 text-sm font-medium transition-smooth ${
-                isAnnual
-                  ? "bg-background text-foreground shadow-card"
-                  : "text-muted-foreground hover:text-foreground"
+                isAnnual ? "bg-background text-foreground shadow-card" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Anual
@@ -154,16 +150,12 @@ const PricingPlans = () => {
                 {plan.monthlyPrice === null ? (
                   <div>
                     <div className="text-3xl font-bold text-primary mb-2">Preço sob consulta</div>
-                    <div className="text-sm text-muted-foreground">
-                      Soluções personalizadas para seu negócio
-                    </div>
+                    <div className="text-sm text-muted-foreground">Soluções personalizadas para seu negócio</div>
                   </div>
                 ) : isAnnual ? (
                   <div>
                     <div className="mb-2">
-                      <span className="text-4xl font-bold text-card-foreground">
-                        {formatPrice(plan.annualPrice!)}
-                      </span>
+                      <span className="text-4xl font-bold text-card-foreground">{formatPrice(plan.annualPrice!)}</span>
                       <span className="text-muted-foreground">/ano</span>
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -173,9 +165,7 @@ const PricingPlans = () => {
                   </div>
                 ) : (
                   <div>
-                    <span className="text-4xl font-bold text-card-foreground">
-                      {formatPrice(plan.monthlyPrice)}
-                    </span>
+                    <span className="text-4xl font-bold text-card-foreground">{formatPrice(plan.monthlyPrice)}</span>
                     <span className="text-muted-foreground">/mês</span>
                   </div>
                 )}
@@ -233,16 +223,15 @@ const PricingPlans = () => {
           <div className="space-y-2 text-sm text-muted-foreground">
             <p>
               <strong>Serviço SaaS:</strong> Infraestrutura Wi-Fi não incluída (APs/controladora, roteadores,
-              switches/PoE, cabeamento e link). O cliente deve possuir equipamentos compatíveis e internet
-              ativa.
+              switches/PoE, cabeamento e link). O cliente deve possuir equipamentos compatíveis e internet ativa.
             </p>
             <p>
-              <strong>"Acessos/Logins ilimitados"</strong> referem-se ao licenciamento do software. A
-              capacidade real depende do hardware e do link do cliente.
+              <strong>"Acessos/Logins ilimitados"</strong> referem-se ao licenciamento do software. A capacidade real
+              depende do hardware e do link do cliente.
             </p>
             <p>
-              <strong>Custos de envio</strong> (SMS/WhatsApp/E-mail) são cobrados pelos provedores/gateways e
-              não estão inclusos nos planos.
+              <strong>Custos de envio</strong> (SMS/WhatsApp/E-mail) são cobrados pelos provedores/gateways e não estão
+              inclusos nos planos.
             </p>
           </div>
         </div>
@@ -340,8 +329,8 @@ const PricingPlans = () => {
               </div>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
-              Compatível com centenas de equipamentos de rede, entre em contato para verificar a
-              compatibilidade específica.
+              Compatível com centenas de equipamentos de rede, entre em contato para verificar a compatibilidade
+              específica.
             </p>
           </div>
         </div>
