@@ -150,4 +150,16 @@
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+  
+  /* Hide Lovable Badge */
+  [id*="lovable" i],
+  [class*="lovable" i],
+  [id*="edit-with" i],
+  [class*="edit-with" i],
+  iframe[src*="lovable" i] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }
