@@ -47,22 +47,29 @@ const Features = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group rounded-xl border border-border bg-card p-6 shadow-card transition-smooth hover:shadow-card-hover hover:border-primary/20"
-            >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
-                <feature.icon className="h-6 w-6" />
+          {features.map((feature, index) => {
+            const isPurple = index % 2 === 1;
+            return (
+              <div
+                key={index}
+                className="group rounded-xl border border-border bg-card p-6 shadow-card transition-smooth hover:shadow-card-hover hover:border-primary/20"
+              >
+                <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg transition-smooth ${
+                  isPurple 
+                    ? 'bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground' 
+                    : 'bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground'
+                }`}>
+                  <feature.icon className="h-6 w-6" />
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-card-foreground">
+                  {feature.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="mb-2 text-xl font-semibold text-card-foreground">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

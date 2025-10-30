@@ -45,13 +45,18 @@ const Markets = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {markets.map((market, index) => {
             const IconComponent = market.icon;
+            const isPurple = market.title === "EVENTOS" || market.title === "HOSPITAIS E CLÍNICAS";
             return (
               <div
                 key={index}
                 className="group relative rounded-xl bg-card p-6 shadow-card hover:shadow-card-hover transition-all duration-300 border border-border/50 hover:border-primary/20"
               >
                 <div className="mb-4 flex items-center justify-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 ${
+                    isPurple
+                      ? 'bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground'
+                      : 'bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground'
+                  }`}>
                     <IconComponent className="h-6 w-6" />
                   </div>
                 </div>

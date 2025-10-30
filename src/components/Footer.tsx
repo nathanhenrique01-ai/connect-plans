@@ -35,17 +35,17 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Produtos</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#planos" className="hover:text-primary transition-smooth">
+                <a href="#planos" className="hover:text-secondary transition-smooth">
                   U-all Connect
                 </a>
               </li>
               <li>
-                <a href="#planos" className="hover:text-primary transition-smooth">
+                <a href="#planos" className="hover:text-secondary transition-smooth">
                   U-all Marketing
                 </a>
               </li>
               <li>
-                <a href="#planos" className="hover:text-primary transition-smooth">
+                <a href="#planos" className="hover:text-secondary transition-smooth">
                   U-all Experience
                 </a>
               </li>
@@ -57,17 +57,17 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Suporte</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#faq" className="hover:text-primary transition-smooth">
+                <a href="#faq" className="hover:text-secondary transition-smooth">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-smooth">
+                <a href="#" className="hover:text-secondary transition-smooth">
                   Documentação
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-smooth">
+                <a href="#" className="hover:text-secondary transition-smooth">
                   Academy
                 </a>
               </li>
@@ -76,7 +76,7 @@ const Footer = () => {
                   href="http://e.uall.ai/9d378412"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-smooth"
+                  className="hover:text-secondary transition-smooth"
                 >
                   Agendar Demonstração
                 </a>
@@ -89,15 +89,15 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Contato</h3>
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 flex-shrink-0" />
+                <Mail className="h-4 w-4 flex-shrink-0 text-secondary" />
                 <span>comercial@uallsolutions.com.br</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 flex-shrink-0" />
+                <Phone className="h-4 w-4 flex-shrink-0 text-secondary" />
                 <span>+55 11 5200-1762</span>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5 text-secondary" />
                 <span>São Paulo, SP - Brasil</span>
               </div>
             </div>
@@ -111,13 +111,13 @@ const Footer = () => {
               © 2024 U-all Solutions. Todos os direitos reservados.
             </div>
             <div className="flex space-x-4 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-smooth">
+              <a href="#" className="hover:text-secondary transition-smooth">
                 Termos de Uso
               </a>
-              <a href="#" className="hover:text-primary transition-smooth">
+              <a href="#" className="hover:text-secondary transition-smooth">
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-primary transition-smooth">
+              <a href="#" className="hover:text-secondary transition-smooth">
                 LGPD
               </a>
             </div>

@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="container relative mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+          <div className="mb-6 inline-flex items-center rounded-full bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary">
             <Wifi className="mr-2 h-4 w-4" />
             Inteligência de Dados
           </div>
@@ -67,9 +67,9 @@ const Hero = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-            <div className="bg-card border-2 border-primary/20 rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-smooth">
+            <div className="bg-card border-2 border-secondary/20 rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-smooth">
               <div className="mb-2 flex items-center justify-center">
-                <Users className="h-6 w-6 text-primary" />
+                <Users className="h-6 w-6 text-secondary" />
               </div>
               <div className="text-3xl font-bold text-foreground">+10 mil</div>
               <div className="text-sm text-muted-foreground">Locais ativos</div>
@@ -88,9 +88,9 @@ const Hero = () => {
               <div className="text-3xl font-bold text-foreground">+15 milhões</div>
               <div className="text-sm text-muted-foreground">Cadastros capturados</div>
             </div>
-            <div className="bg-card border-2 border-primary/20 rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-smooth">
+            <div className="bg-card border-2 border-secondary/20 rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-smooth">
               <div className="mb-2 flex items-center justify-center">
-                <Wifi className="h-6 w-6 text-primary" />
+                <Wifi className="h-6 w-6 text-secondary" />
               </div>
               <div className="text-3xl font-bold text-foreground">99.9%</div>
               <div className="text-sm text-muted-foreground">Uptime garantido</div>
