@@ -20,12 +20,6 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center mb-16 md:mb-20">
           {/* Coluna Texto */}
           <div className="flex flex-col justify-center max-w-2xl">
-            {/* Badge */}
-            <div className="mb-6 inline-flex items-center rounded-full bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary">
-              <Wifi className="mr-2 h-4 w-4" />
-              Inteligência de Dados
-            </div>
-
             {/* Hero Title */}
             <h1 className="mb-8 text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl lg:text-5xl xl:text-6xl">
               Transforme sua{" "}
