@@ -16,9 +16,9 @@ const Hero = () => {
 
       <div className="container relative mx-auto px-4">
         {/* Grid Principal: Texto + Imagem */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center mb-16 md:mb-20">
           {/* Coluna Texto */}
-          <div className="max-w-2xl">
+          <div className="flex flex-col justify-center max-w-2xl">
             {/* Badge */}
             <div className="mb-6 inline-flex items-center rounded-full bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary">
               <Wifi className="mr-2 h-4 w-4" />
@@ -61,12 +61,14 @@ const Hero = () => {
           </div>
 
           {/* Coluna Imagem */}
-          <div className="rounded-xl overflow-hidden shadow-card-hover">
-            <img
-              src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png"
-              alt="Dashboard da plataforma U-all Solutions em notebook mostrando analytics e campanhas de Wi-Fi Marketing"
-              className="w-full h-auto"
-            />
+          <div className="flex items-center justify-center">
+            <div className="rounded-xl overflow-hidden shadow-card-hover max-w-lg w-full">
+              <img
+                src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png"
+                alt="Dashboard da plataforma U-all Solutions em notebook mostrando analytics e campanhas de Wi-Fi Marketing"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
 
