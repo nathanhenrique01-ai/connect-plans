@@ -15,57 +15,63 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/10"></div>
 
       <div className="container relative mx-auto px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          {/* Badge */}
-          <div className="mb-6 inline-flex items-center rounded-full bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary">
-            <Wifi className="mr-2 h-4 w-4" />
-            Inteligência de Dados
+        {/* Grid Principal: Texto + Imagem */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
+          {/* Coluna Texto */}
+          <div className="max-w-2xl">
+            {/* Badge */}
+            <div className="mb-6 inline-flex items-center rounded-full bg-secondary/10 px-4 py-2 text-sm font-medium text-secondary">
+              <Wifi className="mr-2 h-4 w-4" />
+              Inteligência de Dados
+            </div>
+
+            {/* Hero Title */}
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+              Transforme sua{" "}
+              <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
+                empresa
+              </span>{" "}
+              em uma
+              <br />
+              <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
+                máquina de vendas
+              </span>
+            </h1>
+
+            {/* Hero Description */}
+            <p className="mb-8 text-lg text-muted-foreground md:text-xl leading-relaxed">
+              Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de
+              inteligência de dados da U-all Solutions, a mais completa do mercado.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Button variant="hero" size="xl" className="group" onClick={scrollToPlans}>
+                Ver nossos planos
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+              <Button
+                variant="secondary"
+                size="xl"
+                onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
+              >
+                Agendar demonstração
+              </Button>
+            </div>
           </div>
 
-          {/* Hero Title */}
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Transforme sua{" "}
-            <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
-              empresa
-            </span>{" "}
-            em uma
-            <br />
-            <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
-              máquina de vendas
-            </span>
-          </h1>
-
-          {/* Hero Description */}
-          <p className="mb-8 text-lg text-muted-foreground md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Capture dados dos clientes, crie campanhas automáticas e aumente suas vendas com a plataforma de
-            inteligência de dados da U-all Solutions, a mais completa do mercado.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button variant="hero" size="xl" className="group" onClick={scrollToPlans}>
-              Ver nossos planos
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button
-              variant="secondary"
-              size="xl"
-              onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
-            >
-              Agendar demonstração
-            </Button>
-          </div>
-
-          {/* Hero Image */}
-          <div className="mb-12 rounded-xl overflow-hidden shadow-card-hover">
+          {/* Coluna Imagem */}
+          <div className="rounded-xl overflow-hidden shadow-card-hover">
             <img
               src="/lovable-uploads/f34f25ee-de68-4e8b-993b-56a28efaee8b.png"
               alt="Dashboard da plataforma U-all Solutions em notebook mostrando analytics e campanhas de Wi-Fi Marketing"
               className="w-full h-auto"
             />
           </div>
+        </div>
 
-          {/* Stats */}
+        {/* Stats */}
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             <div className="bg-card border-2 border-secondary/20 rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-smooth">
               <div className="mb-2 flex items-center justify-center">
