@@ -45,7 +45,7 @@ const Markets = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {markets.map((market, index) => {
             const IconComponent = market.icon;
-            const isPurple = market.title === "EVENTOS" || market.title === "HOSPITAIS E CLÍNICAS";
+            const isPurple = market.title === "EVENTOS" || market.title === "HOSPITAIS E CLÍNICAS" || market.title === "VAREJO";
             return (
               <div
                 key={index}

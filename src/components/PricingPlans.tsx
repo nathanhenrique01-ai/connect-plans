@@ -97,7 +97,7 @@ const PricingPlans = () => {
 
         {/* Toggle */}
         <div className="mb-12 flex justify-center">
-          <div className="flex items-center rounded-lg bg-secondary p-1">
+          <div className="flex items-center rounded-lg bg-secondary/20 border border-secondary/30 p-1">
             <button
               onClick={() => setIsAnnual(false)}
               className={`rounded-md px-6 py-2 text-sm font-medium transition-smooth ${
@@ -126,7 +126,7 @@ const PricingPlans = () => {
             <div
               key={plan.id}
               className={`relative rounded-xl border bg-card p-8 transition-smooth hover:shadow-card-hover ${
-                plan.popular ? "border-primary shadow-popular scale-105" : "border-border shadow-card"
+                plan.popular ? "border-secondary shadow-popular scale-105" : "border-border shadow-card"
               }`}
             >
               {/* Popular Badge */}

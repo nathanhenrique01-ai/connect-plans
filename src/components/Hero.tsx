@@ -25,12 +25,12 @@ const Hero = () => {
           {/* Hero Title */}
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Transforme sua{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
               empresa
             </span>{" "}
             em uma
             <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
               máquina de vendas
             </span>
           </h1>
@@ -48,7 +48,7 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
-              variant="outline"
+              variant="secondary"
               size="xl"
               onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
             >

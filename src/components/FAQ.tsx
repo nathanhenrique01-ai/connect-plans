@@ -93,18 +93,18 @@ const FAQ = () => {
                   <div className="flex items-center justify-between">
                     <h3 className="font-semibold text-card-foreground pr-4">{faq.question}</h3>
                     {openItems.includes(index) ? (
-                      <ChevronUp className="h-5 w-5 flex-shrink-0 text-primary" />
+                      <ChevronUp className="h-5 w-5 flex-shrink-0 text-secondary" />
                     ) : (
-                      <ChevronDown className="h-5 w-5 flex-shrink-0 text-primary" />
+                      <ChevronDown className="h-5 w-5 flex-shrink-0 text-secondary" />
                     )}
                   </div>
                 </button>
 
                 {openItems.includes(index) && (
                   <div className="px-6 pb-4">
-                    <div className="border-t border-border pt-4">
-                      <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                    </div>
+                  <div className="border-t border-secondary/20 pt-4">
+                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                  </div>
                   </div>
                 )}
               </div>

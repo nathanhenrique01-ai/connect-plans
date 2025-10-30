@@ -53,7 +53,7 @@ const Header = () => {
               FAQ
             </button>
             <Button
-              variant="default"
+              variant="secondary"
               size="sm"
               onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
             >
@@ -100,7 +100,7 @@ const Header = () => {
                 FAQ
               </button>
               <Button
-                variant="default"
+                variant="secondary"
                 size="sm"
                 className="w-fit"
                 onClick={() => window.open("http://e.uall.ai/9d378412", "_blank")}
